@@ -5,7 +5,7 @@ Um roteador (router, em inglês) é um dispositivo que encaminha pacotes de dado
 ## Como executar?
 
 1. Compile os arquivos .java
-2. Execute o Main
+2. Execute o `Main`
 
 ```console
 javac *.java
