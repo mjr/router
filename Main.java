@@ -16,9 +16,9 @@ public class Main {
     public static int DATA_POSITION = 3;
 
     public static void main(String[] args) {
-        File.cleanDirectory("src/output/");
+        File.cleanDirectory("output");
 
-        String identifiersStr = File.read("src/ips.txt");
+        String identifiersStr = File.read("ips.txt");
         String identifiers[];
         identifiers = identifiersStr.split("\n");
         Router routers[][] = new Router[NUMBER_OF_LINES][NUMBER_OF_COLUMNS];
@@ -31,7 +31,7 @@ public class Main {
             }
         }
 
-        String communicationsStr = File.read("src/comunicacao.txt");
+        String communicationsStr = File.read("comunicacao.txt");
         String communications[];
         communications = communicationsStr.split("\n");
         Queue<Packet> input = new ArrayDeque<>();
