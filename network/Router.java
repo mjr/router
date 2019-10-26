@@ -51,7 +51,7 @@ public class Router extends NetworkDevice implements Routing {
                             break;
                         }
                     }
-                    String pathname = "src/output/" + packet.getDestiny() + ".txt";
+                    String pathname = "output/" + packet.getDestiny() + ".txt";
                     File.write(pathname, packet.getData() + "\n");
                     return router.networkPort;
                 }
