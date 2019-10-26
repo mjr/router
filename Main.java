@@ -16,7 +16,7 @@ public class Main {
     public static int DATA_POSITION = 3;
 
     public static void main(String[] args) {
-        File.cleanDirectory("output");
+        File.setup();
 
         String identifiersStr = File.read("ips.txt");
         String identifiers[];
