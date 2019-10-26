@@ -3,8 +3,19 @@ package management;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 public class File {
+    public static void setup() {
+        try {
+            Files.createDirectories(Paths.get("output"));
+            File.cleanDirectory("output");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     public static void cleanDirectory(String pathname) {
         java.io.File directory = new java.io.File(pathname);
 
